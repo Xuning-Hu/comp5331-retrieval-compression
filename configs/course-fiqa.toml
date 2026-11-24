@@ -1,0 +1,9 @@
+[data]
+name = "fiqa"
+
+[embedding]
+device = "cuda"
+batch_size = 16
+
+[experiment]
+output = "runs/course/fiqa"

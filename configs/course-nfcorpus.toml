@@ -1,0 +1,9 @@
+[data]
+name = "nfcorpus"
+
+[embedding]
+device = "cuda"
+batch_size = 16
+
+[experiment]
+output = "runs/course/nfcorpus"

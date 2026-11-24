@@ -1,0 +1,83 @@
+[
+  {
+    "group_id": "45d7f0cdf6906093",
+    "study_key": "e267ef98d100",
+    "study_id": "cd53d50c018f",
+    "config_id": "896f726b9e74",
+    "parameter_id": "c2db2cf1996f",
+    "parameters": {
+      "training": {
+        "threads": 4,
+        "steps": 3000,
+        "batch_size": 128,
+        "lr": 0.001,
+        "min_lr": 1e-05,
+        "device": "cuda",
+        "log_every": 100,
+        "center": true,
+        "regularization_weight": 0.0,
+        "ranking_weight": 10.0,
+        "margin": 0.1,
+        "negative_strategy": "random"
+      },
+      "architecture": "shared linear encoder/decoder; no bias; untied weights",
+      "centering": "corpus mean",
+      "definition": "controlled RAE-style BEIR comparison; see reproduction protocol",
+      "regularizer": "sum of squared encoder and decoder weights; explicit coefficient",
+      "ranking_loss": "one-negative normalized-cosine hinge averaged over positive pairs",
+      "regularization_weight": 0.0,
+      "ranking_weight": 10.0,
+      "negative_strategy": "random",
+      "supervision_config": {
+        "negative_strategy": "random",
+        "hard_top_k": 100,
+        "hard_rank_min": 1,
+        "hard_rank_max": 100
+      }
+    },
+    "parameter_source": "compressor metadata",
+    "protocol": "corpus-adaptive; training supervision documented per compressor; evaluation labels are not passed to training workers",
+    "evaluation_mode": "fitted",
+    "dataset": "fiqa",
+    "split": "dev",
+    "method": "qrae",
+    "dimension": 128,
+    "label": "qrae [e267ef/c2db2c] neg=random reg=0.0 rank=10.0",
+    "n_seeds": 1,
+    "seeds": [
+      42
+    ],
+    "queries": 500,
+    "run_names": [
+      "qrae-128d-seed42"
+    ],
+    "ndcg@10_mean": 0.31741198157227224,
+    "ndcg@10_std": 0.0,
+    "recall@10_mean": 0.38837582417582417,
+    "recall@10_std": 0.0,
+    "mrr@10_mean": 0.3879968253968254,
+    "mrr@10_std": 0.0,
+    "ndcg@100_mean": 0.3848430347270618,
+    "ndcg@100_std": 0.0,
+    "recall@100_mean": 0.6454287712287712,
+    "recall@100_std": 0.0,
+    "mrr@100_mean": 0.39633397909529866,
+    "mrr@100_std": 0.0,
+    "query_doc_overlap@10_mean": 0.37939999999999996,
+    "query_doc_overlap@10_std": 0.0,
+    "doc_doc_overlap@10_mean": 0.422265625,
+    "doc_doc_overlap@10_std": 0.0,
+    "vector_payload_bytes_mean": 29510656.0,
+    "index_file_bytes_mean": 29510701.0,
+    "compressor_file_bytes_mean": 396796.0,
+    "training_decoder_file_bytes_mean": 393484.0,
+    "deployment_bytes_mean": 29907497.0,
+    "search_p50_ms_mean": 1.1564999585971236,
+    "search_p95_ms_mean": 1.3894150964915752,
+    "batch_search_queries_per_second_mean": 1433.2253142620702,
+    "fit_seconds_mean": 25.01507249986753,
+    "search_timing_scopes": [
+      "CPU exact search wrapper; excludes model encoding and projection; includes normalization, result ordering and tie expansion"
+    ]
+  }
+]

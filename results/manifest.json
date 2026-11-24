@@ -1,0 +1,1304 @@
+{
+  "schema_version": 1,
+  "created_date": "2026-11-25",
+  "scope": "Byte-identical numeric excerpts from saved course exports; no new experiment.",
+  "boundary": "Supports per-query score aggregation, not independently recomputing metrics from rankings or retraining models. Original source snapshots and full raw evidence remain on the experiment host.",
+  "studies": [
+    {
+      "family": "main",
+      "directory": "results/main/scifact-test",
+      "source_export": "docs/results/course/scifact-test",
+      "original_snapshot_sha256": "2273aaf06418077a69a06eef2f3918b702c3e2889122d7c11beca3fa781ad6d3",
+      "files": {
+        "per-query.json": "547e238b42fd448a09b73db727eb674ca6dda8dd0d8aba76b91bec0ad3a8bb68",
+        "summary.json": "6b178f4311eaf309216250a224ec3fc7308986dec49632177cd2fb3b9bac310e",
+        "summary.csv": "a5199ad5b03ea648e28f5988fccd7e55e218b82d145a0b7e9bb215937b29cfcb"
+      },
+      "runs": 53
+    },
+    {
+      "family": "main",
+      "directory": "results/main/nfcorpus-test",
+      "source_export": "docs/results/course/nfcorpus-test",
+      "original_snapshot_sha256": "3395f8573c831238576064733fc066725e5fc673a9eb7c5f8d6c4b32b58daaea",
+      "files": {
+        "per-query.json": "a40d6336dcdeecdaba56c9e079d244f35a4340810b5da5c1202f4d04717ec5d7",
+        "summary.json": "9f814c26ef1f5470b973a3bd6db9fee55219b9f96d8a39cb62de26a7434fda6c",
+        "summary.csv": "e185a9780bb7495635b63f263ccf257286514ce539b46dce9742bffb8cb9cb20"
+      },
+      "runs": 53
+    },
+    {
+      "family": "main",
+      "directory": "results/main/fiqa-test",
+      "source_export": "docs/results/course/fiqa-test",
+      "original_snapshot_sha256": "bc08b203707c53347ef2fee294d91ed807182ef36624c6422f515c927591bad1",
+      "files": {
+        "per-query.json": "e3dfc0846031bf20f2539f896c6321b0a17137d67d3a8392c6f726ffbc28c4b7",
+        "summary.json": "0ac6852784dc5f95609c7777a335969daecb5794c1670f75a09aaaf19d001467",
+        "summary.csv": "5a3098c1752efda04145414426a200639d28cf977cb6d71d5bb0614648c39292"
+      },
+      "runs": 53
+    },
+    {
+      "family": "ablations",
+      "directory": "results/ablations/scifact-hard-test",
+      "source_export": "docs/results/course/scifact-hard-test",
+      "original_snapshot_sha256": "562335efb3c9aca8902003e9ead87a6a4accc9bdbbfd37df356f0b03b96d119d",
+      "files": {
+        "per-query.json": "759da645a36b857be02f773de2bb0ea265373b06a26496147706e42186365a08",
+        "summary.json": "f644a70f4092481bc4e0abd0366f0089dc7b209df47e2708976fa31299651b7e",
+        "summary.csv": "11ab5dc2aa5745d2ee3846b11c0ed6fd1510cd00b264a54490b8ea7c141aab10"
+      },
+      "runs": 6
+    },
+    {
+      "family": "ablations",
+      "directory": "results/ablations/scifact-in_batch-test",
+      "source_export": "docs/results/course/scifact-in_batch-test",
+      "original_snapshot_sha256": "aab088d9236135a42ad01cc3182cf2b4c768bf675e25f6cf625ff4526a9a4f0f",
+      "files": {
+        "per-query.json": "312957983309dd68657f25e24a44d325a1a0335a0927f1c70b0f0bf1cad4c028",
+        "summary.json": "bb23903c2b11039b0ab32a9bc8de7610d0c4a6402987e5355de19aae00a4a74d",
+        "summary.csv": "ba12fc64b257c7077a0923e20039b2cb1fc16b1dd74336c56910832256a3d4a7"
+      },
+      "runs": 6
+    },
+    {
+      "family": "ablations",
+      "directory": "results/ablations/scifact-rank-only-test",
+      "source_export": "docs/results/course/scifact-rank-only-test",
+      "original_snapshot_sha256": "3d39dbb38f9eaa950e7faae2db7ab539d7f1fef8a3b8c1156753befa8e785b08",
+      "files": {
+        "per-query.json": "668456e499eece41d0eb67e963bfebe035b1b319972dbfd3075848b4cbe7f0da",
+        "summary.json": "b100ddec3b39bfb1d2ba75c479466ab614161adf6a1dcdc2b148b18e14beed6a",
+        "summary.csv": "545d69b64c3afeb35eb2215fdaabe442caef72733798ccd70aebc234a36972cc"
+      },
+      "runs": 9
+    },
+    {
+      "family": "mpnet-dev",
+      "directory": "results/mpnet-dev/fiqa-dev",
+      "source_export": "docs/results/supplementary/mpnet/fiqa-dev",
+      "original_snapshot_sha256": "6847befbe08d1c650722606a0209449cff0358dcd3616f4d9f718836aa22aec0",
+      "files": {
+        "per-query.json": "9c1a09c3dcf2f342aa8037a3925b9d03513ca6bbbcd683a525c62f9a1e7ec412",
+        "summary.json": "ee9074e3b439d72578df8e0f0e0799a511d9535ef1771585e3c0b2265202bc97",
+        "summary.csv": "1d2725061898b97a13b31a7200acacf1d9d474200e061d5dfee3786bddc9be5c"
+      },
+      "runs": 14
+    },
+    {
+      "family": "mpnet-test",
+      "directory": "results/mpnet-test/fiqa-test",
+      "source_export": "docs/results/supplementary/mpnet/fiqa-test",
+      "original_snapshot_sha256": "0fd87d539cb29393810a479b0c5db2fe727c952dc708edd4083770ae857deb4e",
+      "files": {
+        "per-query.json": "8a87980d411d0ef74eb808318f9a02981a2cc7be1a2dc9223816e61e8715341f",
+        "summary.json": "8f6fd658ce3f5cc29ec6f22a5b1c22fe5cda24a99eb35b41a085d4341cbb41c7",
+        "summary.csv": "079e6807a03ecc71e5953947172e84f06bb492280a04e9a21b8c29ed2f55fa5e"
+      },
+      "runs": 14
+    },
+    {
+      "family": "mpnet-dev",
+      "directory": "results/mpnet-dev/nfcorpus-dev",
+      "source_export": "docs/results/supplementary/mpnet/nfcorpus-dev",
+      "original_snapshot_sha256": "37c947893002f9401e92b123364172d9dbc5858aa4d5bfafcf9cf3e7549f9481",
+      "files": {
+        "per-query.json": "0bdc127d70b58d304e098973378b0a8cfa8b13a25f50ee9e90c7b7d2267db6ff",
+        "summary.json": "26780adc2c50313d2845622d1c92c8e5e6205eb21900e82eabee6d51fd2f65a3",
+        "summary.csv": "35c579db7113b692b820ef2e9f17a581443e791bba84ef503cadf0bfaaf517bd"
+      },
+      "runs": 14
+    },
+    {
+      "family": "mpnet-test",
+      "directory": "results/mpnet-test/nfcorpus-test",
+      "source_export": "docs/results/supplementary/mpnet/nfcorpus-test",
+      "original_snapshot_sha256": "4dfad2b827528dcec78de64bbcf6801a8f82c87c47450b0a282dbe83b669aad1",
+      "files": {
+        "per-query.json": "0f8193cae2ce1a006eeb78c8efcc2f5737072124d06920f22cc938b7f6eadb9a",
+        "summary.json": "6fec84cffc90aa185aba0bcab6791ce68dff4aab3bdc86df712d585e8aba2d6d",
+        "summary.csv": "d3c2f41d4c220aa1965aff6aff908c50df08bb358f45c32f1e35f013c0753c74"
+      },
+      "runs": 14
+    },
+    {
+      "family": "mpnet-dev",
+      "directory": "results/mpnet-dev/scifact-dev",
+      "source_export": "docs/results/supplementary/mpnet/scifact-dev",
+      "original_snapshot_sha256": "631c74a502f2f6dc812d509473aaf46ca0d77d6815f9fa0049826ae0ce68acc4",
+      "files": {
+        "per-query.json": "1840857b269ef10f2d569b7002ff8dfc4c62147bb0b393cd4099083c2220f3be",
+        "summary.json": "c2fd1a89553da3d01c69776314743f8f63b894280a7240aa003fd5dc7dd6eaf4",
+        "summary.csv": "e3c6085c230294028a571c03c2907af62056105f9fe1418d4060bdd83a04e3f5"
+      },
+      "runs": 14
+    },
+    {
+      "family": "mpnet-test",
+      "directory": "results/mpnet-test/scifact-test",
+      "source_export": "docs/results/supplementary/mpnet/scifact-test",
+      "original_snapshot_sha256": "694db05a03fa925a991ee72c2673ef16b7d3fa8e73c05d921736b154dfc181a0",
+      "files": {
+        "per-query.json": "9573c43587cdecb63d37f4ef7abcec72c72bcfe1a4995f4ca0edb333f6505ca9",
+        "summary.json": "e4a237f1bf141dfecd2d867e86cc7941b12e2a2f6b46caff6b8b32ed855fb9de",
+        "summary.csv": "b2e826924ff65a65424d5566ec8db95326c1b2b2aa65feff75c5cf705ce4d780"
+      },
+      "runs": 14
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda0-alpha0-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda0-alpha0-seed17",
+      "original_snapshot_sha256": "d0f1a67a915bbaef2ba8ea8420d20ec554f903f071866c8a75b14cf2ddb03a92",
+      "files": {
+        "per-query.json": "cfbacec15191976e17d9e6cb0e385993b66282b12e1cbf2fc10b333a35c2ef9b",
+        "summary.json": "f58cd0ceeb3527b09fac701b5fe8c13bd29a2786021e8fa8ac921eae6c6f2307",
+        "summary.csv": "bba525821999aa9e26b2d64a2dadc27948d993b17df153008e1ba057a92d71d5"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda0-alpha0-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda0-alpha0-seed2026",
+      "original_snapshot_sha256": "b06131a46ca6c7d4c41a4abcdf8e160d39057db2f8e612290a5277adffaf1876",
+      "files": {
+        "per-query.json": "3b7e9d3b6fd6d012d7aa1b1a66ebbff0e0e5cf8af77de43bbec452a39ee29edc",
+        "summary.json": "ac1105e0dc5d28c4e0b21eaeb233f1f78237897ab060bccdc5a1ae13622bea1a",
+        "summary.csv": "d06faafc9baee7e170d1d48e7104af3430e683f9bc2651b15434168cd816a057"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda0-alpha0-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda0-alpha0-seed42",
+      "original_snapshot_sha256": "78b183f5719661ab0abc2f5d2a8a437ddfa147702adce9df9a32d0c07e82b863",
+      "files": {
+        "per-query.json": "bc21eccda7e83b70529fae3d7d032bab3e0f8a30150543376c91ee8c238ff2fd",
+        "summary.json": "36e8750fc42938e319916aeef46f68514f026144fb08ffc806de2269008c057a",
+        "summary.csv": "b387c01dba2ecd3592590c385cf0e67ffc1deb8f6f55466217bb2805890a2823"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda0-alpha1-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda0-alpha1-seed17",
+      "original_snapshot_sha256": "041c3b1cc6eaf343de2a3f5c7dbd510de72204b79929eade5c28f5d24d77bf66",
+      "files": {
+        "per-query.json": "d95a2b9e9627872d44bfc6ef1572c163a8b49d804b601075591af2e12388c8c5",
+        "summary.json": "6bb1f892115178dbc79d7d6ddd8e84f10b010395305fc97bccedc9fca86c9089",
+        "summary.csv": "ae502c068c325a6d497d6816230886c0d54de064c97e0abc87c8c8d839870f29"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda0-alpha1-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda0-alpha1-seed2026",
+      "original_snapshot_sha256": "be438468e97fe913cabe8884041b44eb5dfa7f8d9e6fe68d2f84b7bf06b9ed5a",
+      "files": {
+        "per-query.json": "7da9be9a8f45e20a8df7d41ec957fb994835373548bc7c5407d72a40d76f3798",
+        "summary.json": "14c911fa86b6f778dd06919ee3f6e9dd277e49d1ee98bf040493d462bbf17622",
+        "summary.csv": "db188766835a53c4a79c3a4eb1a2952eaaeff272523c82bc7fcf27eabac241b6"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda0-alpha1-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda0-alpha1-seed42",
+      "original_snapshot_sha256": "95a797c29b247f375a0f0f3c131ecfea03ed3e17e47d52f23c772bba1705dc99",
+      "files": {
+        "per-query.json": "09b8c24b88989a8f9a44a6e659f22c9301502138d0d060184c76c61276b91622",
+        "summary.json": "c874318ec0ade372d130b293d001f9b6ca2057022a1a128bc0bc0a59d802ba3a",
+        "summary.csv": "4a77bf1bece7f0f4b485abae1b852a9e3ec62a1b003580dc0ed49aa60064cf72"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda0-alpha10-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda0-alpha10-seed17",
+      "original_snapshot_sha256": "81c9759d8d9de389a66dee3bc8342df12f215c63c9e553ba676fb8d46796e7b3",
+      "files": {
+        "per-query.json": "086d3ea6bac2ac6d9c67ed21ccaacb4c75e686cfccb0aa8c0041e6b28d295105",
+        "summary.json": "6674f06ad09357f516fd1c0d4d554866b8b6cddbb70d3c45bb96f9c994377e55",
+        "summary.csv": "271fc606537c5b9426b859658d84329743e63fa3a1b91c6734c5916bc36c64a5"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda0-alpha10-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda0-alpha10-seed2026",
+      "original_snapshot_sha256": "50be201ace19cc6da00349497a90f1ae5722ed5a74ebd0958763dc5cb7555c83",
+      "files": {
+        "per-query.json": "e5e455ce4ea3ec54e2fdfe74fb8552c5a0055bb85fdf96b36c544d58dafb2c22",
+        "summary.json": "8253142049ed87a98ac41b3a25091c021e7db9c42f1edd676a313d2da7992994",
+        "summary.csv": "21eca0250cd288aaacf062d8bbc5ba2c88b15bc2466509a556fe5c93512f57ee"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda0-alpha10-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda0-alpha10-seed42",
+      "original_snapshot_sha256": "b662ca51d5fc76234aff12d0a42fe90f9706babe75db671833e28f4e6a2e6503",
+      "files": {
+        "per-query.json": "a7e7b2a766cffcd54bf2c3c295c4ba65708a14040a64ad564a0907f8521ec305",
+        "summary.json": "530a7815c7ca1e79bce4a1f5414f5d07ccd48a003767c6be356ac6334b69248d",
+        "summary.csv": "b74ce9c9d5f95cbb8620d74e2efc7690725bb0f256a20a9fe6292ab8d6376823"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda0-alpha100-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda0-alpha100-seed17",
+      "original_snapshot_sha256": "ad18ddd1466d93655f8e9a06bc6d54bb1bccd3d0cebc85e209bfb36df514bff3",
+      "files": {
+        "per-query.json": "284cd0c848e8ccf957864c29ac97832028a0c2d46aacc2696b5ba1c4cf2b4799",
+        "summary.json": "721a057cf34f3e9244313fe244b7c3def2c2e6fb96572755ed8a46e07d5f5f08",
+        "summary.csv": "ca4f5ff630e9b3fcedf90e58594d67086b7b14f9c31423911e3b8d4877ddc6b2"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda0-alpha100-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda0-alpha100-seed2026",
+      "original_snapshot_sha256": "0f146a06cc21bd34e57ad5c110b8f64c3d199a2139a9498abfb87cc3b958fbf7",
+      "files": {
+        "per-query.json": "b463c72ede19c87dc09fca7b6734243175bba274e3c1c2abe289fe0d37ed19dc",
+        "summary.json": "55e56728daa20d1fac2d1141d996183a92a7bbb853d4397f32dd09cf8982ab17",
+        "summary.csv": "01685e24c2c4b93109415bfa512d724bae39a12120c876cfde8e18a75a9e7e94"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda0-alpha100-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda0-alpha100-seed42",
+      "original_snapshot_sha256": "1db0289fb8cdc8e927e5234bd4e1851e8abc6a816efa0d124456c3b58c4d59cd",
+      "files": {
+        "per-query.json": "6a07df687231cdbdb57eb5e28621006938bfd3feead2853641f582d79b305874",
+        "summary.json": "2d77cbf50e2c477609e989d4d8ab44a3c6a15eeca8db0751510957f5e69c130c",
+        "summary.csv": "da15cb3d644dfc54d4810b710926c435651dd8573a35318c2766a607699438b3"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda0.0001-alpha0-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda0.0001-alpha0-seed17",
+      "original_snapshot_sha256": "f169fb2b6324b6ef07b4d53360f65e7c4d43a1fda670d6420aea16f44f9ee256",
+      "files": {
+        "per-query.json": "fc766e71824446a82070b98740085a260505c4fe16a0e7213f1d95fd99206494",
+        "summary.json": "518fdffd79180f53ad87893c9361a0cdd585e52967bc6ef6894fa758da1c8252",
+        "summary.csv": "16928a83befa587d32f712c0f43e8251f78492468ba677ffb9d811c874d17b7c"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda0.0001-alpha0-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda0.0001-alpha0-seed2026",
+      "original_snapshot_sha256": "564f0dc291dc3c00b8927fe03abbe477f0aef74da4493c845bae2980deab2468",
+      "files": {
+        "per-query.json": "bc168cde92dea59bc697ef97f7405452f547d1c5649507ed82a29e5deb257766",
+        "summary.json": "84e3ad59e70b2bd5ff6f2c3560f20ed6838b0cfbbb76deff228c17668c114d6e",
+        "summary.csv": "77aceea19eaa777ee2a5bef2a6d254363b3726718989982b33781e805a81bc3c"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda0.0001-alpha0-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda0.0001-alpha0-seed42",
+      "original_snapshot_sha256": "6a0c11dd9b4ce93dc7ed57d04353d4c96de7d2ef84e5cadf68780973cbc4f469",
+      "files": {
+        "per-query.json": "283bc917b1ac4eca57f787129701f1ec1f714378b133c01d06f49ea63d3863eb",
+        "summary.json": "e07a33bc1502e5756069982e99df45162a8b5d1ae5462a6dc6d8b5ff9214ee47",
+        "summary.csv": "185eacd4c56c7c3ba6fa8a75f22aec092879c2da91fa1d5289f765b5cc8299e2"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda0.0001-alpha1-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda0.0001-alpha1-seed17",
+      "original_snapshot_sha256": "42337ccc2811ab6e24a1f54307fb126ab24902f1ba3627edd09009ad3b3ec94b",
+      "files": {
+        "per-query.json": "fc95326e24c4605119d43855bceb2ce239556bacd677069554bbada9e93b04c3",
+        "summary.json": "0b1563cd8955b41c907272605d9ec32a655015b85dd65f75cf18b67c487aff92",
+        "summary.csv": "ec6c9b03fd75ca22719744eb11bdc1b2a0187882791af36b54ef28ecc55b8983"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda0.0001-alpha1-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda0.0001-alpha1-seed2026",
+      "original_snapshot_sha256": "02207cf6ba6cd2cfd5ab84ddf16a1a198930405caeb8b3482db176174601d3d6",
+      "files": {
+        "per-query.json": "0c5fe52c0cdd12b76bb990bf3fb004c0406562bcd234a23054fcaa2d7d121dfd",
+        "summary.json": "d4e6012805d65ca42fbfff9e8869c7a7c182376fb9c94797f1d91a08fa569382",
+        "summary.csv": "c81ff5ea3f3baf9c0c6e16d95378b52a5537d24bc19c125237df0b8cf94d653a"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda0.0001-alpha1-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda0.0001-alpha1-seed42",
+      "original_snapshot_sha256": "e02cc51922bbe60fd094c233d7b813a4275b9b44b2f29877c67953e35ec8a111",
+      "files": {
+        "per-query.json": "717c68b6c136074ad47b7f968d04a043186ed9b6ebb978837eeb3c9d8b34e09f",
+        "summary.json": "68dcde89b491be40836644c7e7e7cd89e15dbc39a6c9c384c2e9661a99acbcc5",
+        "summary.csv": "a88a002a666c19b1fd26a7c43660f4f0f0529928f1445c1730c6fc8fbbc94c60"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda0.0001-alpha10-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda0.0001-alpha10-seed17",
+      "original_snapshot_sha256": "1c5d4d175601cb7bfdcdeddce92cda7af83e0a05275e37a83c820f93724b0298",
+      "files": {
+        "per-query.json": "f1264ac00e14a04a8d61690d5b0b0a7316a47096f1bed610c4ac62c9cb84b0df",
+        "summary.json": "8659db9b17a3773fb1d67c154e38647aef88b6f5dd8c780ee3663988b128f7ac",
+        "summary.csv": "db8e66a8732200b0a5760843a4470e8539d4ef48aff3df30937375c8771f56a4"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda0.0001-alpha10-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda0.0001-alpha10-seed2026",
+      "original_snapshot_sha256": "797afd7ae9b5b345495f6d4b9e5b0ef34c3ba40168e047ee04afe1940013af20",
+      "files": {
+        "per-query.json": "366aa4058a103eee6416cf68a73bf37ca41b89e37b1f699c7a650cbe62346446",
+        "summary.json": "252f1c6ff7ea7b0a22d946ecd9c38b4d4984deb949feff16c4fc926c0c08a847",
+        "summary.csv": "2f716755d0b048b1f02d1a93b34311a268f64d39e85ae734d5988c64e0fee824"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda0.0001-alpha10-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda0.0001-alpha10-seed42",
+      "original_snapshot_sha256": "6166ada620a395e879a453af75ea41cf03ba5737889f560f0d576eba4ddf61e5",
+      "files": {
+        "per-query.json": "9f75435027f4d8b56b159cc9516851aa24a0c634164f7455fe3a3c539de86026",
+        "summary.json": "1276e75a33d6ab0a9f5fbf8eb204f838440d7873ec854105217dadd7fd6f9cff",
+        "summary.csv": "2ec401259e071bb3975e09d564a3b529fc6feefe1faa59c7f56904a92f14a3df"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda0.0001-alpha100-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda0.0001-alpha100-seed17",
+      "original_snapshot_sha256": "f13d61eab32a6c5b1b4ec26c035389496a6301af2e33f55cb4210c17f1cc9ce0",
+      "files": {
+        "per-query.json": "b10c6b42ec0d3531b936b3af418ebd64022cbc86f3e4a78e6164c1438a6575f4",
+        "summary.json": "8eb7207b83495e5f98a5d68b1321aa61ec58831aa6bd6952918ebc427c93688f",
+        "summary.csv": "86cd1fabc8ce426809a67e46a4f868d5e273bc0f40e99d3b906df37ecb7bc046"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda0.0001-alpha100-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda0.0001-alpha100-seed2026",
+      "original_snapshot_sha256": "8225be667a1873878ebffefbcee55a068c110fec6afbef304447e682f6b09e36",
+      "files": {
+        "per-query.json": "6d52103624d45abbba11ae70a8cc661ecfe3a55895caf975291f01ef57451ce8",
+        "summary.json": "7d522165937ee78482e1ff8ce12999834ceeaa7dd77fad115429f97aa20f6d44",
+        "summary.csv": "22db06138794a6d506471d34b515e497634935dbee95608c2f16679650473bca"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda0.0001-alpha100-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda0.0001-alpha100-seed42",
+      "original_snapshot_sha256": "09ce8092cd8a6115eb263b2105c68b45f29bf79c33616e1ee7484ea7a3abeee0",
+      "files": {
+        "per-query.json": "c697ebcbf9e296f835d19f27c7cbcb414ba01ef8f226a79432ab6a7e16abe95a",
+        "summary.json": "75d8e7c9cbb671b0734ced95f9a602a6044b6cb62c51e509c69c2879705173c2",
+        "summary.csv": "626708d59849da5bf6fb2d5e7b38ed4cc708d16126c1a9c8a0d90215895c6955"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda1e-05-alpha0-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda1e-05-alpha0-seed17",
+      "original_snapshot_sha256": "6b7b91ed2bde494ba81db91078cc925f1a230fdb84bd893a798fa06133294d98",
+      "files": {
+        "per-query.json": "42971875bf4a91437009bdaaef66d1931a69a66d80968d84f3fc032e67969986",
+        "summary.json": "b33c7f9e2edf088300ff88000e568a71b6682e6f3e5b40fc1f791d8fb5e19c75",
+        "summary.csv": "df14a8bfb272f30fef764a605f059052eb37fb18a400d6faef077274d7962a2d"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda1e-05-alpha0-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda1e-05-alpha0-seed2026",
+      "original_snapshot_sha256": "cd8ce2690cde4b399bdc9f835da8e6b57f83d05707a8d23f91e819c0eb2f6217",
+      "files": {
+        "per-query.json": "22d2eeb35e08d157c0258ea2ab7ef9f41513fe917a5177392d3212fa01055ea8",
+        "summary.json": "c3f76f79dcabf2621a028683daecae22bb1530feeb7020f92d7fc6a1158d1f61",
+        "summary.csv": "4cf1b251b0cff57956747b02c321b0c6d0123826599766dc5b61e7ff38715d8e"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda1e-05-alpha0-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda1e-05-alpha0-seed42",
+      "original_snapshot_sha256": "04549a9ac59c0eec302d378f47e756d94782d5e4dbf51bde9db173a6c4023a7c",
+      "files": {
+        "per-query.json": "5ad9325d01941b5dd3fc4fa4ddaa6284448a9a8090e6ae30c3d625260f1d558b",
+        "summary.json": "fd0bc4721cef0dc8f0e90422cf5de6d3539dec01118301ea83fdbe079b166b1d",
+        "summary.csv": "a33d9233cc64a9462d2ff4decb134969f6d6902a0b41f434bf1266e2482ba1a2"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda1e-05-alpha1-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda1e-05-alpha1-seed17",
+      "original_snapshot_sha256": "1f1d719a408090033f70280289ffda9393cf56b0c2331526b2d818af35467602",
+      "files": {
+        "per-query.json": "37a2cfd64eb8b82b3d9d6483e60fb52687c9ea0fd98d5b6a631c8f4bf75b7e9c",
+        "summary.json": "904f562f48ec9c65842a5503d47c811868584127d90d60b8b29ee58659026122",
+        "summary.csv": "435a81288197b2d00adbde1528af7b0ae0a3f4c5ac88fd497e3320c265f8835e"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda1e-05-alpha1-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda1e-05-alpha1-seed2026",
+      "original_snapshot_sha256": "80b184ce671456797df8a5c703b822e5783fd0b5a6561c157985b9dd44cc4edc",
+      "files": {
+        "per-query.json": "eb923323d78ab6eedc55d5ee96afc3ed902ba68ee0075ad27581e558d77e5738",
+        "summary.json": "71c472424f10eeed6433da219f384a0c5befb40bbc022a0b20067b65f7c6bfce",
+        "summary.csv": "74a3ed68f9d4eed01d5e9b5c5862ed734a15aa664c1f8ad1658ff16805cc07eb"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda1e-05-alpha1-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda1e-05-alpha1-seed42",
+      "original_snapshot_sha256": "7a4a8509ae4819f1754db6aebb652dea0c800f04719b6727c9a8268e08efbc8f",
+      "files": {
+        "per-query.json": "8fa29bcae1be88832a050878d196eb197a6a6019315d46bff7c1746341381c51",
+        "summary.json": "88353f19524454c7aeb1872675486f075e148ecae763a65122b3bec186c617e8",
+        "summary.csv": "dbf57de24b44c63cbcb9f2e3aac39dce6f0dc5df671858da38c225c54075cd25"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda1e-05-alpha10-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda1e-05-alpha10-seed17",
+      "original_snapshot_sha256": "d64bfbbbc868036cc33c6ba74d8a8f272a5b21ede12ea38e8234f69375216df7",
+      "files": {
+        "per-query.json": "0c04795559f33aedc2172e4c223d3fb3b6ea3f946c5aeb459e57303678bd9231",
+        "summary.json": "2ca245fcd50dc306ceac62dd080ea45d02c59c19a51b637a1619620effba2d85",
+        "summary.csv": "974cee75b187f14ee266c406f9ec9036b08234fa817895daaad319a36dab77a6"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda1e-05-alpha10-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda1e-05-alpha10-seed2026",
+      "original_snapshot_sha256": "3cdf3f20507f7ecf80ebb6db7961988380d799c3afc2bd5f7ddfffecceb63031",
+      "files": {
+        "per-query.json": "7b34e1e434292ccf6264c20562e685e96ace1c8dc760a4964bafa8aaab3ced6a",
+        "summary.json": "92a6d2ec0aab7dbb1a99c6cfc996b681658418414067b1809060d4924d1713cd",
+        "summary.csv": "434ea4a66d36f5ffaee9807f4f266f10f7420e007bb76497c9ba1559fcd4dd73"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda1e-05-alpha10-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda1e-05-alpha10-seed42",
+      "original_snapshot_sha256": "e1a23b19a4b255cff09446e4ac88dd63f8d2cc243a50a9cbc0e171beef59b290",
+      "files": {
+        "per-query.json": "a9a41b545309c15429ce8f2a9073940194a93221417019fc804672ac08736368",
+        "summary.json": "4d3b5521244bccd23be2a94fb6a905847239726aa4dd47b62066a74f2427fe6a",
+        "summary.csv": "dfc8b0b7d8160c8c9bcee0fe49c6dceba229fa45f16a361589b853e0f4c5f43a"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda1e-05-alpha100-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda1e-05-alpha100-seed17",
+      "original_snapshot_sha256": "d09132935a5f9bcfcade9c6fcf9fd01af34a172607e6728d0ae44cb53123239a",
+      "files": {
+        "per-query.json": "ad27ec11455f052b68970ac9e7e8f46c75fe827b5ac04dcc2741d5e438aa9acf",
+        "summary.json": "a054dd47bafd4577f2890b8e60948ec897caaf95ce05b49d1aac14bbeb7a608c",
+        "summary.csv": "e4206da47de00950f01d8ee11359660e4fdbabf8bc0a7c234499303ac9c94175"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda1e-05-alpha100-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda1e-05-alpha100-seed2026",
+      "original_snapshot_sha256": "4f2bb258b7d29882bd281036a9cff1da1c0175815bdd03171320b3b000017807",
+      "files": {
+        "per-query.json": "f4991690089b299a9a65bbd21dcab64aea437012e2be34d1897c885748a74427",
+        "summary.json": "a47fc88252955ead0d84ac17245a797a269130dfc14b90148ed00d0cbc8b7499",
+        "summary.csv": "6e05a519894722dc8b22c1e3dc7c802dd2c46d55506d909d3dc5ab461fefabd1"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda1e-05-alpha100-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda1e-05-alpha100-seed42",
+      "original_snapshot_sha256": "a2004ae302ec2dbf5c016ae805f1733061eaeb2e956c36ce27ebd6c4ea8f333e",
+      "files": {
+        "per-query.json": "b4fc8c83769b1845fcffb5d02cac4e4b70d259ecb05b2dc4be551ba92d919c21",
+        "summary.json": "85e58a56da10bb9a9c80e3b97e66627b193b4dddae788b051d392462dd26315d",
+        "summary.csv": "01426e4ded882df2eb45cd1b3bea813d8fe0bb489a17a1d604df2a681da0a571"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda1e-06-alpha0-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda1e-06-alpha0-seed17",
+      "original_snapshot_sha256": "30dd42bfa94bf3356387802cbecfcf6a36031d66a37c67a0d8b6000b1fb868a7",
+      "files": {
+        "per-query.json": "adeea164ceed8f2995a7c8aa90504f9deaca5d68013107848060ba53db796ec5",
+        "summary.json": "600930959f4c26880a50b7a01c8e408ec7400fb2f2ad76c37f620d6f74da4259",
+        "summary.csv": "d4b920052ce6f514f07ae78d39b713b2eb412563cc54e1e8d76c1d9e3c762860"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda1e-06-alpha0-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda1e-06-alpha0-seed2026",
+      "original_snapshot_sha256": "73bf6b41dd68ecad96e2a2f4a9ea02115cca45cab45197066d9c9d0ade6b5d60",
+      "files": {
+        "per-query.json": "7465c6565005ccf67e89d05cce088e1ae7e426beecf911738141f376845f4885",
+        "summary.json": "c2f835588197b98fe47e27a039380099c4f7b82f73d14fe1232747fd222f1ee7",
+        "summary.csv": "cae7cc539d168e2523cf812e9c708000a486b260a9817c6f43e1d8e9696b842f"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda1e-06-alpha0-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda1e-06-alpha0-seed42",
+      "original_snapshot_sha256": "a8b4d2ee8be71b08babaa4c4490c06a55cc4368574c66e5d581a973a917391e7",
+      "files": {
+        "per-query.json": "f89ccb9d9c4dc058eba140e6c7413f2cecde3b52612e5fe6c5bf87af64ce4154",
+        "summary.json": "a01c27ea33981b1b960f9c4c48eae74edce0954c46dcf0ee136e7d5b7b606db4",
+        "summary.csv": "5b956f7e8adcff4c83cd6e9a352d6ddd9b3cc6a7bf2d2c5055616b6afbf77a53"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda1e-06-alpha1-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda1e-06-alpha1-seed17",
+      "original_snapshot_sha256": "7081741b0f5910db8cbf118b54400094bd2aa8656b3214efc0c20d4397775d35",
+      "files": {
+        "per-query.json": "d3cfd648d39226117ef65623ab81c3ba937ac802eeae41de366c0dc2498e2aaf",
+        "summary.json": "dcac2f7785dd6fa7fa73bad063642b6ccb498faa0af32008b8220aa302e3a111",
+        "summary.csv": "2e3635f880d270ef17f9d4f672713d08bdb5bef17e624e28f9e5961c1ee15de6"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda1e-06-alpha1-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda1e-06-alpha1-seed2026",
+      "original_snapshot_sha256": "eaa7187b7b6d423b254c199e6e32e50fe9000c2063bfd0c4031c771be252bad8",
+      "files": {
+        "per-query.json": "50dde549ac763c4887fa9095e674d1b0bd07ac61ca7b8d640633f5ac6e1c3fff",
+        "summary.json": "59938efac98cee0f85f4dba6e91e32433acf2b2dc7f02b9752c22e34f2ed400e",
+        "summary.csv": "d9d5597c69c551be10d48ca96e39c978e66d516440b84c151abb01a369eb84c2"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda1e-06-alpha1-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda1e-06-alpha1-seed42",
+      "original_snapshot_sha256": "1670063213260cbae67e01303c3e01ee516d25643832d95816c010d68a6c469e",
+      "files": {
+        "per-query.json": "4b9f2b97cb10d6c2f8d6c80df9d36ef30954f914bee98fe650e5379327d7568e",
+        "summary.json": "4f96224442de09d64e09a26e0f2528231f6493dcb559f752356b5b5daeba8789",
+        "summary.csv": "1e4b04f342b8b8c69cc8ac8bb4d747f5847b4d413be34566d69421ef97fc446c"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda1e-06-alpha10-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda1e-06-alpha10-seed17",
+      "original_snapshot_sha256": "743ac020ab0200451ff4461da5c8efe97ec35aaca0a93ca25429e7dc11716521",
+      "files": {
+        "per-query.json": "724236caf42164b14033882d28bc355b4bd32d6cfb0fdc36d0ae6a11c936c1ab",
+        "summary.json": "4bb8a772add081ea4ae81442ee89a5d22860ddb8eeaef9bdd1a2db376601dd7f",
+        "summary.csv": "19b615d60fca050ea5a775c09fa01b1c5a0c2bbed7577cfdd987f374546456bc"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda1e-06-alpha10-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda1e-06-alpha10-seed2026",
+      "original_snapshot_sha256": "4516543782ffbbfdd26d580165891d6ca89736f75860a87ab0974c20925eb4c4",
+      "files": {
+        "per-query.json": "6cfe5e5ffad9ad26c46e28ca30c99b8dcaa2b3686a1fe9935e19862cc9fa8a7b",
+        "summary.json": "342e83f5831cf98b18b322defc5fc340bb1bfad2a5d6d1341c029c2ff71ec9bb",
+        "summary.csv": "a16adc174bbac9c10b0b1197fa7a49fb9407436184a80cb69816da5fcd233011"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda1e-06-alpha10-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda1e-06-alpha10-seed42",
+      "original_snapshot_sha256": "6f97943bb477189dafda3cbaa54fd0781b3517a51bd521b16acaa850c503b5b9",
+      "files": {
+        "per-query.json": "831c758fe75514204f5528b0248e8608e094e85099c2192b6d985650ba1b770d",
+        "summary.json": "ce32b7d8dcb9b26977892af984a72ab001a7a0a75e337c05a462349feecf70bf",
+        "summary.csv": "7cba87e671bd82a5a05dcea0c2541f03fd8f05ab21110f61d4c6ca1e709de6d6"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda1e-06-alpha100-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda1e-06-alpha100-seed17",
+      "original_snapshot_sha256": "985980ae1dc26115eeb430f685587eb865c3e76f36e5d1c455931721b522a0c7",
+      "files": {
+        "per-query.json": "b39589ab7cfb688ba1e478be5700955f8206eaf4265842a9450228bd8cdafcf5",
+        "summary.json": "1904d29422ff0aeb3b26becde300b1cd220cbd58a341c73129fd56b2c3a09d68",
+        "summary.csv": "74cbe2cfa992b074304465c50e2273405efe8e99ddce208391c18656e87f87c0"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda1e-06-alpha100-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda1e-06-alpha100-seed2026",
+      "original_snapshot_sha256": "03849fe9052607af67bad806915de467a1a642b9f0f3fe21c5e697eaf49ffc72",
+      "files": {
+        "per-query.json": "3bfa8934ee834f696895d56038f01e374b37bb4daf67ea4d741e9f728b4ea96a",
+        "summary.json": "b3c83987eb0424424ed220acd949a14cb15822815353c12ef86ba258b27bd1a2",
+        "summary.csv": "c886610de3b9e86da63f30e3e30477ef333c01a0552ae97aa8ba8b641c7d22db"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/fiqa-lambda1e-06-alpha100-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/fiqa-lambda1e-06-alpha100-seed42",
+      "original_snapshot_sha256": "4e0dc844674c7ab38cecb3e8c5c6520f7eb4d1878a74070fc70fb52fd7868790",
+      "files": {
+        "per-query.json": "5292d93cf74ab8d7aa1e53b228d5f531c17755d3055406e21d96bdf06d0b9543",
+        "summary.json": "0f41c56a8ed41d3470769a16ac525de7271cbd99b78f85c4be8efd3f4e0346de",
+        "summary.csv": "a084f054cf8027e4edd7e78bef2fe076362f321b217f263943d2e5b6b5b017bf"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda0-alpha0-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda0-alpha0-seed17",
+      "original_snapshot_sha256": "275a22f5f338976e2d0f48df1856b86e19f5b37c07d1c844ee559526effe90fc",
+      "files": {
+        "per-query.json": "1d30dddc9d3b55d48e300cb013cf5f8f6f023a5cdc8b6d93ed750f619d4d2a00",
+        "summary.json": "9f608ecb969377a301c8a2f7dbc3930f955c2f8e55e8a8f16536232038fadc42",
+        "summary.csv": "2d3d32d16faafb9cc6e80b0c035fe95a32da2140f2ad14a00a8bb9f4dd717c84"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda0-alpha0-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda0-alpha0-seed2026",
+      "original_snapshot_sha256": "0c8ab6b7774463fdd2e1b1717cffcc19f050418b298eca7dc9f9d2b87de614e2",
+      "files": {
+        "per-query.json": "c4e407b3fd0a8d18523e9addbce0fd834865048f5f4a29d4ff447608f69eecc4",
+        "summary.json": "ca15c3c42e807c3301f06d6b060155ef210cd5c8b33f066bbdb48baaa5d0d1c0",
+        "summary.csv": "ed2a87cbf0e68544f81ef685056ba73ab18b67b398a58aaca5149ba389163429"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda0-alpha0-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda0-alpha0-seed42",
+      "original_snapshot_sha256": "b7746a2ab9a774283d927a801dbb2de2af5681088ddf3d980ecfc69378788d13",
+      "files": {
+        "per-query.json": "8120a1c3515c0f37d45d162bb7c8a946fc57843df50d3f5f84c45751c56667b5",
+        "summary.json": "e0b1c0826f8088d6d82079dbc42591d3ee403dd43cf1d3d9446a2e77d698ce02",
+        "summary.csv": "e0c74088cc075fd310cb6d0024d7e61dec86fd87c038c9ccc39535335496f3b4"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda0-alpha1-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda0-alpha1-seed17",
+      "original_snapshot_sha256": "21d6e67c53d9f70cb76f2fe9ade8f35e12f6c474215c102119772914abd7367a",
+      "files": {
+        "per-query.json": "d89e305d17cb262a93c2a694d472764a86dbe4af270cabc5af693edae0666b36",
+        "summary.json": "efa1fe8eb6b2a0320edbbb9ab1ea41c4af916cb6f04b3efc04fae9a586ca1f83",
+        "summary.csv": "62d8ab256cb8f7ca1b5c65e06b3638289117227c7341923a4701c94540ebc05e"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda0-alpha1-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda0-alpha1-seed2026",
+      "original_snapshot_sha256": "221bd8ecc63385bdbe99bb029293c9f24af3de132c7548e5252856004f70e9e5",
+      "files": {
+        "per-query.json": "dbc4c0673c3378c145376716051ee5398fe3a5f56bc0dfb102ecfa7d73ff94aa",
+        "summary.json": "f36addaeeb32987b3572ff8bf4843a4a66c7e2c385e0dc130511fa090e2f09a0",
+        "summary.csv": "054eaf6bf9a8bbe8558a01a741523ec2934c64a22b6a3adabaf34d9a5b64e18d"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda0-alpha1-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda0-alpha1-seed42",
+      "original_snapshot_sha256": "a5b52c1289561b2d52c3f1155e5bcb1501e1f1af25908a6bd7c3d2075a774b8a",
+      "files": {
+        "per-query.json": "b0e3859b419a9b2c6b3711a6c1e53325b6568ee04d03882ca587294c72cf8817",
+        "summary.json": "aba639db9dbebaba86e3986e1d2c8b6aa0e1e0514b64aaab9009a91ae22ddb2e",
+        "summary.csv": "0c376ce0a6ff9170c241e8e58e1482a42aaf24386558d94276cb1dfcdc1980d0"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda0-alpha10-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda0-alpha10-seed17",
+      "original_snapshot_sha256": "6c988ae425f6075e1f533fdf0b8a1f8aeb4a1a745c4f3388ffac7dd963f890aa",
+      "files": {
+        "per-query.json": "4f60492b6369dd5ec74f8393aaf6b25c6795d65a79e6ee79acde68adaf51e149",
+        "summary.json": "56ba6d6194415d3249581f094bb674217c0256aed2a4d9d0ae1f519a3826cfe4",
+        "summary.csv": "fc8b6466abe50ef23f8c42a3205b320eb2e641cc3f94ce822d1c36ce0a9f6721"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda0-alpha10-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda0-alpha10-seed2026",
+      "original_snapshot_sha256": "4d06e068f9f1b23c60c89d2251c0f5d1ab32c146b1cdf0ed0d9fbb352e3b36bb",
+      "files": {
+        "per-query.json": "537b72a1926deb4f06788544db9b9be65d6e907d1e0b84dac2c3ebc2e0317235",
+        "summary.json": "409f2171d78680bbabaf4e9b848e644b615fcfe19ccf9bea6cafcfd353c5e572",
+        "summary.csv": "27e4b475c7bfbeb65dc628cb90a260b28db137d5786175cb652a937004e5568a"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda0-alpha10-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda0-alpha10-seed42",
+      "original_snapshot_sha256": "6191a5632e89da2a909a541421889a2d37eb6d59fd59a1fbb90d1370daf830c7",
+      "files": {
+        "per-query.json": "e06ea764e2f972b39101fd712c0d96f409f0856518635933d591815bd8cd7efe",
+        "summary.json": "d42410da92c306db5ce530a280aab42e8642c9ab1d9f8673cd02f6e2cebd8b0b",
+        "summary.csv": "005d9242fe96590abb84da24e657333b0e5cd6db0d245dd6135fa1f01d28e35e"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda0-alpha100-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda0-alpha100-seed17",
+      "original_snapshot_sha256": "14c092602f5a42f97318fd1d6d513eea70fc084a8d20e41e25694cb5dc1c828d",
+      "files": {
+        "per-query.json": "99d3b615c279544385e258a5f6afe31c2b060e1b8adc9fd4eda447bf6428cd9a",
+        "summary.json": "ac0139a96319dddf1af3a94bc607a158663d879057d9c1c07ac12f5ffa0482c6",
+        "summary.csv": "a2886ebc72060f667daada528c4051b689b28963abf23a9ba1724a832b3a49db"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda0-alpha100-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda0-alpha100-seed2026",
+      "original_snapshot_sha256": "c05847bede8d3c4dc58f1f430c1ecc91a5cdabd1d695f58f61e65f75ef505ffa",
+      "files": {
+        "per-query.json": "00aa5b2fe583d2d8a6f94861756308438a7a3269744d46c533948d55af1bfca5",
+        "summary.json": "0b8cc07b8a03b2e842580900f3cc5044f7c68c5c3b5e87227db9e52d5b11d92e",
+        "summary.csv": "0a0dd735a5aeecceb660e64752eb1df6291b383c647189db2c2785aa5e388dc0"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda0-alpha100-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda0-alpha100-seed42",
+      "original_snapshot_sha256": "281911a3dde08ba7efe41a22f8d9943dc1e0a35c89e13faff6443493fcb86f9d",
+      "files": {
+        "per-query.json": "62511db28c05e69a81d47780ccc2f68259827994e686f01bf13119fe9703afc5",
+        "summary.json": "22a709e04a953b587231eb9b13e0c63e381e35649e4116056b04d3df4876994e",
+        "summary.csv": "ef888cf9175424969456efa0ecb406127cc444a8ea6e68dceaa22bccb9c5fb96"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda0.0001-alpha0-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda0.0001-alpha0-seed17",
+      "original_snapshot_sha256": "3eabbb249fbe7c4b562f55492bed637522575d64d8aa717aa5b1ce524a60dbb8",
+      "files": {
+        "per-query.json": "cf7eea3f88f5318a7c8fc81fbfeaa7699f5985e66fad2f3ceeb9b27d01915666",
+        "summary.json": "01da8acb633fd8922ba0b4ef82358c5a66a040ced4d69cc3a062c1cc6296f106",
+        "summary.csv": "07e46562f091d414e84cc6ba1e046591d51a55d744bc8084c9192b157b2f9c65"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda0.0001-alpha0-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda0.0001-alpha0-seed2026",
+      "original_snapshot_sha256": "b085a19dbd335ff666199b20d9f908f59dd10079bfaeac37914af5c75f8ccce5",
+      "files": {
+        "per-query.json": "3ecd6d54a9879728c63d552ac6b87719e7fed42f1abcfa6b15881a425dfe4711",
+        "summary.json": "fa2a8140b468100d6cf008f4b2f8def09d0111d942a6cabf5fe7912931f8f1bf",
+        "summary.csv": "b100b898fec3b77aed2c4c5e6d98a14eec869d41e5afbf0ebf5f7e43feac4098"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda0.0001-alpha0-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda0.0001-alpha0-seed42",
+      "original_snapshot_sha256": "4b51ca70ab4a2bbdaeab43d6c6a3d87c68d1271fd25defb5c86ae588797f8150",
+      "files": {
+        "per-query.json": "af4db64ca15da308c175683c0b4612746649a562da9322f1ae44c6f7bb9eca49",
+        "summary.json": "c761e84d77863c37fef70892755e838756e084fe68b714a79186381b8c237890",
+        "summary.csv": "aec2dbcffa9be04a08c0305991e689f76eb7954c61db0330eee4b5627ae06932"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda0.0001-alpha1-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda0.0001-alpha1-seed17",
+      "original_snapshot_sha256": "9e7b524f7703caaf14cd6eaebe96a2e21e42c4af4e6d30c96b13586d78de7915",
+      "files": {
+        "per-query.json": "1354fe992381c0e5772cc8ade7b6b5ca65afdc0b4390fdfe19e33bfe9fbbb551",
+        "summary.json": "e0802f96039d2d2c00dd614d61984b55c7a684d4033a657cce01fa1bd767d671",
+        "summary.csv": "a74d0ea596d554b8a311f62e94a63757c14fc64a7112b4c7a21709fc51b071fc"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda0.0001-alpha1-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda0.0001-alpha1-seed2026",
+      "original_snapshot_sha256": "a9ee8f568dd0bedca3589e715ea0d0708a1b1055321f5c17d63cf28f5c1f4828",
+      "files": {
+        "per-query.json": "5d97393567fcf5e6dc11c576b62a3c60f6f47498e2ff57383a4ffee567d855a2",
+        "summary.json": "2ca16090f8768609cd9c989f7876badbbfb4dac6595ee9eef7833a2c547a5b59",
+        "summary.csv": "08944b89f32cbec852900c00471f2c05e3db953f4f9ac56d63082c03e7994dc4"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda0.0001-alpha1-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda0.0001-alpha1-seed42",
+      "original_snapshot_sha256": "3a6eb591adb89c2f232702e32f2ff0d274075cefd6b1e7c8c2888152b311f428",
+      "files": {
+        "per-query.json": "6ce567aac8a67ef5c2411e3eb7c796fe1cb146087e303a670e9e5a419cee7be9",
+        "summary.json": "e7e0b86fc3742a20e4b248c1ce0d387b78c7cd3c9d5bdd3105ac99f293354398",
+        "summary.csv": "0adac616859f31d3d7f277b3f4792239a43d6e85c1f8a057e2a449a00ab705e4"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda0.0001-alpha10-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda0.0001-alpha10-seed17",
+      "original_snapshot_sha256": "80ece0ae9e16fa37f30c31bb8212dd1e1c1288b54577935147341e7f3d096bbe",
+      "files": {
+        "per-query.json": "19ac50977d00ecd609ba2c09d68134a2f9cd3fde9b251978cf24b7e3ab7cafca",
+        "summary.json": "58553482e36d392488c6493fa114c7f5fd5fdccf967f9b215d5974001cdb0aad",
+        "summary.csv": "e2e1d7c4f4282f164fa3e8ea90aebd5a03a95c375577be33ec4e12feef706d60"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda0.0001-alpha10-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda0.0001-alpha10-seed2026",
+      "original_snapshot_sha256": "7b1416e5df230d9cb019ffca101e955c0b83a2b0298e30bbaed958a91a630046",
+      "files": {
+        "per-query.json": "cdd59117b539323a882c1f41e30655f1e9e516fb9fa5bc87d7774cf5e68dcf46",
+        "summary.json": "63e41421c0682802257a7d73a039e3860e1026fce41c53e1b90226ac0d7c8104",
+        "summary.csv": "c81a73814ec5dc195ce27560917933dfd2d1d864626372afa023ec4da61c2a86"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda0.0001-alpha10-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda0.0001-alpha10-seed42",
+      "original_snapshot_sha256": "2d5a3789156e53f43bbd3f18049d54a017264a53bb1c194c1f3368903a822e5c",
+      "files": {
+        "per-query.json": "5a13a7c3419b5bd9fd4725f983e682b6d9af00e720103766c96c451a1e6c14ea",
+        "summary.json": "8f30fa1c9b22d1a0d7bf26352e2973d0b84ba97681edb795f87dd4090a05ee07",
+        "summary.csv": "06e0109f605bfbd1ce31365f5b3a6d50c1f3e11c36f4f2ecd9abcfcd33d9bb1c"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda0.0001-alpha100-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda0.0001-alpha100-seed17",
+      "original_snapshot_sha256": "a9d622b591a1b4d10a2e2ef87e66c2bfe93f922944a1539b824a9913b7f89cf6",
+      "files": {
+        "per-query.json": "be2fa97fc1715681b6abf7d60f48123afa4661896ab63862ad3fea476142b554",
+        "summary.json": "286553bea015245fdfc176dcc9a457aafe3620df7cc5128a43a589eccbb4a6f0",
+        "summary.csv": "cabdbb3bb4333c998b8f27173405e4d38a1c19b355f16ed2fcc82d49777a2b5b"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda0.0001-alpha100-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda0.0001-alpha100-seed2026",
+      "original_snapshot_sha256": "21e045b18c6f47921d3c751aff3e6da52ccde637db7f208fb0a30b5444628397",
+      "files": {
+        "per-query.json": "0eaa532de3b7ce84c03530175e4c68e16cfe767dce9825d9a76b9d0db303f219",
+        "summary.json": "2af2474eee5b8d38c7f5a33188233cd339fd212bc0086c4aada9a9217ac995b6",
+        "summary.csv": "87a458726f3b824cbaef886d5891b518621e79fb80ba8a90de084142535cf47c"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda0.0001-alpha100-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda0.0001-alpha100-seed42",
+      "original_snapshot_sha256": "896c143c3214b51f23edf0d0ec2c2d585cc83e5d8f3c44291f5acc8a0c7166f4",
+      "files": {
+        "per-query.json": "031e06848609d8126131f79eb2811769d59e1a52b5cdb1030d8af02fd258cc9d",
+        "summary.json": "55d4410c0687d70a50611c369fca3857789642c0ecaa133c38cb76da12056836",
+        "summary.csv": "98aa1d9564893816e2f8fb81f4613da77eb3b2fbd798fce09d175a2f4fec255d"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda1e-05-alpha0-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda1e-05-alpha0-seed17",
+      "original_snapshot_sha256": "797a549264e061ca902aba81476a944d8927c95b7bac2c4c02b82b3df47a344f",
+      "files": {
+        "per-query.json": "20244f917492dae0a70a25f17e33a6b633018b492daf2f60b1a591c37e006c8d",
+        "summary.json": "4e00d4e75df7ad92ecd4752fb15817644eed42e300bbcc6804f3f293786307fd",
+        "summary.csv": "4dc5b235ac187783249d417bec0236185dc1b95bdf77ff4fb96b05b0f1a08132"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda1e-05-alpha0-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda1e-05-alpha0-seed2026",
+      "original_snapshot_sha256": "8aa6c1eff3a4aa76885186377e3bf7baab0e873bdd778b406e1b183d1970297b",
+      "files": {
+        "per-query.json": "caee070d73d445392357a8431d603a8d007dc4f5a53280570bdd04ef8773b072",
+        "summary.json": "f11cb0548dd0e757320aed13e98988b672d0ae086b1b75cd85aeb4c8e8391752",
+        "summary.csv": "91aeaf6e1959a68e4d8e5f30057eff58157e1a194655a7866baec000cfdb300e"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda1e-05-alpha0-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda1e-05-alpha0-seed42",
+      "original_snapshot_sha256": "46f9937b38f2329d35bb2a717adef6e2daa68e6914367596948c93c5786fc08b",
+      "files": {
+        "per-query.json": "6bdcbcbba116b296046337b9dbf1bfde0f626186c4ebd6e2284308fafc8ac7bc",
+        "summary.json": "c54ccaf0a8719143bcf2830c8a62c9b633ec71ed3b8cdcd6eff153ebb31c18b0",
+        "summary.csv": "5d2ae8f5d3c3e89252b570b65658d222b2a1f93f2e683fab8dd4e1ba490975b0"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda1e-05-alpha1-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda1e-05-alpha1-seed17",
+      "original_snapshot_sha256": "02f169ad2a8960e417c68920e40d392f14f25d5e2b5937356ad7b00603d32c66",
+      "files": {
+        "per-query.json": "9f905978554231297433f6070c3bafa78b470683fffc6569a0225f8ea1136914",
+        "summary.json": "5e3f6441509a7d6f51e51306d02faa33cb13141688545fd83e4cd3e2cc03f88b",
+        "summary.csv": "a34303ea10d18f99edca30f11003769948aea27432fd15b0a8a4d4c0c2d30fd4"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda1e-05-alpha1-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda1e-05-alpha1-seed2026",
+      "original_snapshot_sha256": "01ef6a4ac205f1b1517824f455e6a6b61a1dad3c6f8b3203fbb3d383b15c0e3e",
+      "files": {
+        "per-query.json": "fe397fd3a0caac80797529b45e5ada3bab0a0b88875a8c8a43aee6848c5fb2f5",
+        "summary.json": "ad6aaa16d152bf9bb9444ae7e9a53a9306d92a24ebe283990b06635050312d76",
+        "summary.csv": "834833892544b97b81f440662ccd9acb38e80d9a82c8c41cd9306f3785a0054c"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda1e-05-alpha1-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda1e-05-alpha1-seed42",
+      "original_snapshot_sha256": "8a9a228ffc41b98ef524f9e11dda9e575aafa98a426de9912810f789f1fcf5ec",
+      "files": {
+        "per-query.json": "5d7ce5aa4e30007be540bbeaf793d23c25f360de2a25b1457d52e236ba96baf7",
+        "summary.json": "23583cdc7591f2ba31dde496054eefb7601787e0a22dc3da5e2c138f7c093fb3",
+        "summary.csv": "6f32762419fcb5a6c769579118b5f2c34b83bc6b07a4f04c761c259533be76d3"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda1e-05-alpha10-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda1e-05-alpha10-seed17",
+      "original_snapshot_sha256": "19e5a4d21865bb327a91a9a8a7ca24396cdf9550aa94e92b705fa2b5fc5285de",
+      "files": {
+        "per-query.json": "880aeef20e9362f0e2aa0dd17d3811aecd7340b2ac49323338830c1c0a2a5471",
+        "summary.json": "4d2616c1e37c10bff246a447a2643bd51a6b4f936e8a3b9d0a0251084ffa0a49",
+        "summary.csv": "21dd89b23fec038ba848f6506a8f06fcbd44c2e175d54e72238f7ccf6f56aabd"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda1e-05-alpha10-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda1e-05-alpha10-seed2026",
+      "original_snapshot_sha256": "99433ce0795cf76a33ae45b82c70aa9a1f5cb01c47b06a478a2cff448f91f952",
+      "files": {
+        "per-query.json": "4eec68f38226a935547f9efe39ad883195c774045f10b14e3f4d46eb0911462a",
+        "summary.json": "c6249118f60fa3197e64601f8f8ade8d004316bfa6f59ca89cbe84db210eface",
+        "summary.csv": "0eec4bc6c8da8157621fed93701e15b9478f59ec91a85283cbdeb2d4076cc8ff"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda1e-05-alpha10-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda1e-05-alpha10-seed42",
+      "original_snapshot_sha256": "1343507db459e004a23f806a96059dd675923913fe9ad6d8549bb879cebf7a40",
+      "files": {
+        "per-query.json": "ece94839f770d39028c58c4d244dd306933e4021712d850f3daf8482b33be8e2",
+        "summary.json": "b97499c7f7ea23f5ed4cd7ddbdac755ea942ea4aa7b0df4965f0a14e6f62f56d",
+        "summary.csv": "fa6fb52a6f2e9abb2c399f328eeebbad3aca17cdf2ccbb7ac1ca99652cbe316f"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda1e-05-alpha100-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda1e-05-alpha100-seed17",
+      "original_snapshot_sha256": "42e203416345d0bd0100403d9dc0c35fec5df03f9b5edf65111f3dd7fd07047d",
+      "files": {
+        "per-query.json": "eb1565053d869c3fefc6770c85270c71020c823c3d85a4cc8cb654def665e2ae",
+        "summary.json": "3148bedf98e7ea089f9f963ad0168bc97ed598b3b8b5fe014d60f1aa4e59ea03",
+        "summary.csv": "67600797351753c16e4b959081698933e98fac1530e4380c6c145401dc7f267f"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda1e-05-alpha100-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda1e-05-alpha100-seed2026",
+      "original_snapshot_sha256": "28ba18875a74a00bdc2bb3f1e4d17f8e9ce3add6f7cfe559cb6553854a31ce90",
+      "files": {
+        "per-query.json": "e96499e85de582637c0214d922ba4cf36b18376119ec320a774251fbae46222d",
+        "summary.json": "ffa4fe14108685c586750a5f735e39ca4ecc1dbba7ed2f21012ef4cb58f68671",
+        "summary.csv": "7da170596247fcaca139d795b5c9cb85c3939288c7ff65b0aa94ff0b1f44f6ae"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda1e-05-alpha100-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda1e-05-alpha100-seed42",
+      "original_snapshot_sha256": "c95eafb9cd40c36706f0cf25ef870d323bbaf68a7673370a0780976ae17ff20d",
+      "files": {
+        "per-query.json": "43641f0bc905b7cb9174ce269af6df24b8e7783a03f5a9453f8700880a490677",
+        "summary.json": "dbfd8a0c6d8e91e3e6dbc56cf88812b3925d54a7dadbc831ca764dd5ac5c9ae9",
+        "summary.csv": "432c0e0e0af40a47da6d8f44b1bac31258c436996d3e311fb6369de7207d4831"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda1e-06-alpha0-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda1e-06-alpha0-seed17",
+      "original_snapshot_sha256": "043830d7414a7636de5577953c72a4e2935bceb9f13ade8ad64045f519b7c00a",
+      "files": {
+        "per-query.json": "33981c296b6108bde53b1f39654c65c1445df4faa53f25bced5ae12562d50f97",
+        "summary.json": "44cf9130e9ea2b6dc75fec30dfa8cba3fbddd410ca97ee1855151893ac0bb613",
+        "summary.csv": "63a4f746486d3156e8cfad81ab69bb938913443a1e016d1f6718624136a319a1"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda1e-06-alpha0-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda1e-06-alpha0-seed2026",
+      "original_snapshot_sha256": "f3cbcb70d124e2c1564db61a21d9f6d70d8fd6ea14fad503b0808c793fd6acb7",
+      "files": {
+        "per-query.json": "dde25d40e77bc542418e1c4b5845b3687df5cf297dfa4e37c017a6964deebff7",
+        "summary.json": "6b4a7584517d83590806ab9a49250f220300db1894fa455bf920eadadf77ef8a",
+        "summary.csv": "f5b65d5a92290421010c36a11c99f879cd09293c30cfa8b19534e48dc233226f"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda1e-06-alpha0-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda1e-06-alpha0-seed42",
+      "original_snapshot_sha256": "f4262ec88acc1b785ad9e992847f1ea99978c7ebfd6ac857325349dba7dbdacf",
+      "files": {
+        "per-query.json": "4bc63b6f6ff055a8c69830f53c17961ec56d1d2e7a46811edeb462e77e593cbb",
+        "summary.json": "558e9e5d16386cae93f6acb94776110f2746dc91c99d11f9029aa68019800632",
+        "summary.csv": "573019c0a860db87ebcee4947c182d60e8eab5a2b9ea208dce98080087bcf59d"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda1e-06-alpha1-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda1e-06-alpha1-seed17",
+      "original_snapshot_sha256": "aea1a28352c31df641e57d276b4939db8e8c8e03090b8333ef3800a4a1c1cb78",
+      "files": {
+        "per-query.json": "14b6c732db531b9291d8fe6379e43b3dd5dad29a9e2f6c29367d5ef6a5b01677",
+        "summary.json": "a460bc519764b1b26c8ed6945c176cff409b7da3d38a326c283e2dc4d905e093",
+        "summary.csv": "a1f8f743df3c7e660922e725c9afda1cd163bf73d30e515f984e90abbd7e462e"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda1e-06-alpha1-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda1e-06-alpha1-seed2026",
+      "original_snapshot_sha256": "3116e8f17eda53427e4ce8202263fd48511adbdf8bfd2e4256fb3126d3560f9f",
+      "files": {
+        "per-query.json": "147d58ac8ee41eaff48d4efc856d7393458d77c11007dc49be44a1caa41d7682",
+        "summary.json": "0504e59eae4dcebeebed96379b57c547f15822f789622a47bb87844296ad6e20",
+        "summary.csv": "fcd516d454fe82feb707279c0fbf807b73f3fea21c161852f5037748ae79e20c"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda1e-06-alpha1-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda1e-06-alpha1-seed42",
+      "original_snapshot_sha256": "740a0f988ea237d5044d3a4b10d363a1880b12be30d347f65ec403a2267aebbf",
+      "files": {
+        "per-query.json": "900a898e56fe40af5e3ef5b98fbe07bbabf2accfde9d08429b73562055386567",
+        "summary.json": "c082372ff38665cf8dad139b3ed1062f7dc3fc5133a4dc2a07ec649d37aefab8",
+        "summary.csv": "704f0ef8d686ea7a73ae79eb88286d4c15350f5887e1e93eea8986c5a27b200a"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda1e-06-alpha10-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda1e-06-alpha10-seed17",
+      "original_snapshot_sha256": "6139be154f640fe73fdc3342410a2c889d8bafda98a4ede099097e287984548f",
+      "files": {
+        "per-query.json": "c911e1575f0e4cbabb6b1ba9cc94333d2666d0d83de2d2d9de6e45c1a16bad86",
+        "summary.json": "48a8320457ac8ea280021e8c48a89ed579a6bffaa37b016f6d482b8e32023a5a",
+        "summary.csv": "64945e395fdc47d7cae8f9977bc3b465f9fcf4ef7097972e5699606bd3f27d88"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda1e-06-alpha10-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda1e-06-alpha10-seed2026",
+      "original_snapshot_sha256": "da3b56b4641a20f88d4482bff2cec8341a40a45aad70e588f58234d80438a303",
+      "files": {
+        "per-query.json": "74d66fca32456090f838d206453e7ddaa169464a0801da7b062237d12f3a8dfd",
+        "summary.json": "90cad324053bd03a02b386bd490313b2c943b9647c065f2e58d95352ab79dfd0",
+        "summary.csv": "e7732b105c3b5cf9d3d53a84ba2384d00a78e4c607245dd803e0ab16d53585c6"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda1e-06-alpha10-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda1e-06-alpha10-seed42",
+      "original_snapshot_sha256": "cd0fab24d7b9c4c7e21d56451b1ca4544b636782f48866c5beca94ed977ebf53",
+      "files": {
+        "per-query.json": "1e6e75185b3300ace3c9aca20142aac5b129df3cfba403a1030166414e31e6f6",
+        "summary.json": "3082c99c1599d85afc2612272246a2e0ccc8173d73ced69cca7fa339eec5c481",
+        "summary.csv": "d8eff8d3875b5796b2f378845df61df8b1cd696e5172f44162843a16258f9095"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda1e-06-alpha100-seed17",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda1e-06-alpha100-seed17",
+      "original_snapshot_sha256": "4f88a37eebbc5fa1cb2434c3a7339fc9e3c8e786c337efec7c94b790de2bc9df",
+      "files": {
+        "per-query.json": "0d4cad1905f5fb8e9d2bb85d3624dabd9eb640ddd47bc4233d0306fce435e30b",
+        "summary.json": "aac2d868f3832cfd390daa1a9c5fb6bb7bc3cea9b0911560cc694e1dc922af04",
+        "summary.csv": "80c2891e122d3a640b6aacca08da601451107c842cf9c30f473fbaebdd3e7fcc"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda1e-06-alpha100-seed2026",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda1e-06-alpha100-seed2026",
+      "original_snapshot_sha256": "35d4bc60f487e186a0a67ae2ae1bc73fed12501ea719c07c38fd33d09234a4e8",
+      "files": {
+        "per-query.json": "4467fa8d78f3bf7a98ecdac6c0ad700c44a7ae3b7a16235020ededfde68152cf",
+        "summary.json": "a4ee7589d1ed9de2e569ec2767f8ed4ca3e77f6ae6490fbd30f8ca3138b11c2c",
+        "summary.csv": "39b4ee73c35e2320ceaa44bd5984dc98f6d180ec4eeccd2d58ca670fe3306c07"
+      },
+      "runs": 1
+    },
+    {
+      "family": "weight-grid",
+      "directory": "results/weight-grid/scifact-lambda1e-06-alpha100-seed42",
+      "source_export": "docs/results/supplementary/weight-grid/scifact-lambda1e-06-alpha100-seed42",
+      "original_snapshot_sha256": "5bcd1da48d589a8ba135a09459eb02ed4489e5968a816ba92380f39113abd2a9",
+      "files": {
+        "per-query.json": "55b0cca2583cb21344514b6a5c2568e249e01eada4ca7f4a0b923a21cfeb4b71",
+        "summary.json": "ac72002ac39272b7e61fa25a3c2e3b64db3e7a108c7f5778bea0ed147325210e",
+        "summary.csv": "f14bc9deee78feb2d8438d73480cf70ae91c8a7c6b7eb626bd32b5eab532de7d"
+      },
+      "runs": 1
+    }
+  ]
+}

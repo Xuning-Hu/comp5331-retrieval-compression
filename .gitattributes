@@ -1,0 +1,7 @@
+* text=auto eol=lf
+src/** -text
+scripts/** -text
+results/** -text
+docs/results/** -text
+*.png binary
+*.zip binary

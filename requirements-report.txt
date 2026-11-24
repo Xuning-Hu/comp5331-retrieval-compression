@@ -1,0 +1,4 @@
+# Observed artifact-rendering environment, separate from the experiment runtime.
+reportlab==4.4.9
+pypdf==6.10.0
+pillow==12.3.0
